@@ -69,11 +69,20 @@ const { oferta, imgPlato, nombre, icono, tiempo, precio} = Astro.props
                     <p>&dollar; {precio}</p>
                 </span>
             </span>
+            <span class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam alias beatae amet 
+            </span>
         </div>
     </div>
 </div>
 
 <style>
+    .description{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    
+
     h1,p {
         margin: 0px;
     }
@@ -113,7 +122,7 @@ const { oferta, imgPlato, nombre, icono, tiempo, precio} = Astro.props
 
     .card .info{
         display: flex;
-        align-items: center;
+        align-items: start;
     }
 
     .card .info .texto .time, .price{
@@ -140,6 +149,7 @@ const { oferta, imgPlato, nombre, icono, tiempo, precio} = Astro.props
         width: 30px;
         height: 30px;
         padding: 0px 10px;
+        margin-top: 10px;
     }
 
 </style>
